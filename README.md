@@ -16,9 +16,6 @@ e).- Tareas completadas
 
 2.-Planificacion
 
-
-Claro, aquí tienes la lista de funcionalidades sin la dependencia de una base de datos:
-
 Funcionalidades:
 
 Agregar nuevas tareas:
