@@ -1,6 +1,10 @@
 # Proyecto1
-Enunciadon/
+Enunciado 
+
 Planificacion
+
 Diseño
+
 Ramas
+
 Funciones (Asignado)
