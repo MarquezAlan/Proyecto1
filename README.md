@@ -16,6 +16,7 @@ e).- Tareas completadas
 
 2.-Planificacion
 
+
 3.-Diseño
 
 4.-Ramas
