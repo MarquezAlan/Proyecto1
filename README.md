@@ -1,13 +1,23 @@
 # Proyecto1
-Enunciado 
+1.-Enunciado 
 Crear una aplicacion de la lista de tareas que permita a los usuarios -> 
-1.- Agregar nuevas tareas
-2.- Marcarlas como completadas 
-3.- 
-Planificacion
 
-Diseño
+a).- Agregar nuevas tareas
 
-Ramas
+b).- Marcarlas como completadas 
 
-Funciones (Asignado)
+c).- Eliminarlas de la lista
+
+d).- Generar reportes por estados de tareas en curso 
+
+e).- Tareas completadas 
+
+- Lenguaje de programacion 
+
+2.-Planificacion
+
+3.-Diseño
+
+4.-Ramas
+
+5.-Funciones (Asignado)
