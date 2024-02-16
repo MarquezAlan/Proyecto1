@@ -1,5 +1,5 @@
 # Proyecto1
-Enunciado/n
+Enunciadon/
 Planificacion
 Diseño
 Ramas
