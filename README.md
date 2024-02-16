@@ -18,7 +18,7 @@ e).- Tareas completadas
 
 Funcionalidades:
 
-- Agregar nuevas tareas:
+## - Agregar nuevas tareas:
 
 Interfaz de usuario para que los usuarios ingresen el nombre de la tarea y la agreguen a la lista.
 Lógica para almacenar las nuevas tareas en la memoria de la aplicación (por ejemplo, en un arreglo o en el almacenamiento local del navegador).
