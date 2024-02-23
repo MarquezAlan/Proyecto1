@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class GestorTareas {
@@ -15,8 +16,8 @@ public class GestorTareas {
         tareas = gestorArchivos.leerTareas();
     }
 
-    public void agregarTarea(String descripcion) {
-        Tarea tarea = new Tarea(descripcion);
+    public void agregarTarea(String descripcion, Date fecha, String hora) {
+        Tarea tarea = new Tarea(descripcion, fecha, hora);
         tareas.add(tarea);
         gestorArchivos.escribirTareas(tareas);
     }
@@ -40,6 +41,17 @@ public class GestorTareas {
         }
     }
 
+    public void eliminarTareasCompletadas() {
+        List<Tarea> tareasAEliminar = new ArrayList<>();
+        for (Tarea tarea : tareas) {
+            if (tarea.estaCompletada()) {
+                tareasAEliminar.add(tarea);
+            }
+        }
+        tareas.removeAll(tareasAEliminar);
+        gestorArchivos.escribirTareas(tareas);
+    }
+
     public void generarReporte() {
         int completadas = 0;
         int enProgreso = 0;
@@ -60,4 +72,3 @@ public class GestorTareas {
         return tareas;
     }
 }
-
