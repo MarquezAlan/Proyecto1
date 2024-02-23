@@ -2,15 +2,15 @@
 # 1.-Enunciado 
 Crear una aplicacion de la lista de tareas que permita a los usuarios -> 
 
-a).- Agregar nuevas tareas
+a).- Agregar nuevas tareas.
 
-b).- Marcarlas como completadas 
+b).- Marcarlas como completadas .
 
-c).- Eliminarlas de la lista
+c).- Eliminarlas de la lista.
 
-d).- Generar reportes por estados de tareas en curso 
+d).- Generar reportes por estados de tareas en curso .
 
-e).- Tareas completadas 
+e).- Tareas completadas .
 
 - Lenguaje de programacion 
 
