@@ -1,5 +1,8 @@
 import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class GestorArchivos {
@@ -15,9 +18,17 @@ public class GestorArchivos {
         try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
             String linea;
             while ((linea = br.readLine()) != null) {
-                tareas.add(new Tarea(linea));
+                String[] partes = linea.split(",");
+                if (partes.length >= 3) {
+                    String descripcion = partes[0];
+                    Date fecha = new SimpleDateFormat("yyyy-MM-dd").parse(partes[1]);
+                    String hora = partes[2];
+                    tareas.add(new Tarea(descripcion, fecha, hora));
+                } else {
+                    // Manejar el formato incorrecto del archivo
+                }
             }
-        } catch (IOException e) {
+        } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
 
@@ -27,7 +38,10 @@ public class GestorArchivos {
     public void escribirTareas(List<Tarea> tareas) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo))) {
             for (Tarea tarea : tareas) {
-                bw.write(tarea.getDescripcion());
+                String linea = tarea.getDescripcion() + "," +
+                        new SimpleDateFormat("yyyy-MM-dd").format(tarea.getFecha()) + "," +
+                        tarea.getHora();
+                bw.write(linea);
                 bw.newLine();
             }
         } catch (IOException e) {
@@ -35,4 +49,3 @@ public class GestorArchivos {
         }
     }
 }
-
